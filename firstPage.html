@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="css/PM.css">
+  <script src="js/PM.js"></script>
+</head>
+<body>
+<br>
+  
+  <label><b>Name:</b></label>
+  <input id="name" type="text" name="name" >
+  <label><b>Type:</b></label>
+  <input id="type" type="text" name="type">
+  <label><b>Description:</b></label>
+  <input id="description" type="text" name="description">
+  <button onclick="create()">Create issue</button>
+  <div id="line"></div>
+  <div id="TextBoxContainer"></div>
+  <div id="line"></div>
+  <label><b>Sprint name:</b></label>
+  <input id="sn" type="text" name="name" >
+  <button onclick="createSprint()">Create sprint</button>
+  <div id="line"></div>
+  <div id="line"></div>
+
+<div id="parent">
+<table id="table">
+    <th>
+	 &nbsp;
+	<div id="div0" align="center">Sprint1</div>
+	</th>
+	
+	<th>
+	New
+	<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</th>
+	<th>
+	In progress
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</th>
+	<th>
+	Feedback
+	<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</th>
+	<th>
+	Rework
+	<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</th>
+	<th>
+	Resolved
+	<div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</th>
+	<th>
+	Ready for Testing
+	<div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</th>
+	
+	</table>
+</div>
+</body>
+</html>
